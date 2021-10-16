@@ -55,6 +55,7 @@ $ sudo apt install -y virt-manager
 # 4. Install Vagrant
 ```
 $ sudo apt install --yes vagrant vagrant-libvirt
+$ sudo reboot
 ```
 
 # 5. Run Vagrant and GPU workloads
