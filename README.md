@@ -6,12 +6,10 @@
        Intel(R) Core(TM) i5-7600 CPU @ 3.50GHz
        DIMM slot1: DDR4 DIMM 16GB (KLEVV)
        DIMM slot2: DDR4 DIMM 16GB (KLEVV)
-       DIMM slot3: Empty
-       DIMM slot4: Empty
-   (2) NVMe SSD
-       KLEVV SSD 256GB CRAS C710 M.2 Type2280 PCIe3x4 NVMe 3D TLC NAND Flash
-       P/N: K256GM2SP0-C71
-       Performance Spec: Read 1950MB/s, Write 1250MB/s
+       DIMM slot3: DDR4 DIMM 16GB (KLEVV)
+       DIMM slot4: DDR4 DIMM 16GB (KLEVV)
+   (2) SATA SSD (SSD Type: MLC)
+       TOSHIBA THNSNH128GCST 128GB
    (3) NVIDIA Quadro P1000
        For Pass Through at Virtual Machine (do not use as VGA but for GPGPU)
    (4) NVIDIA Quadro K600
