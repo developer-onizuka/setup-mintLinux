@@ -71,10 +71,31 @@ $ vagrant up --provider=libvirt
 **If you wanna change images directry from /var/lib/libvirt/images to some another directry, you might use followings:**
 ```
 $ mkdir -p /mnt/data
-$ virsh pool-create-as --name data --type dir --target /mnt/data
-$ virsh pool-list
+
+$ virsh pool-define-as data dir --target /mnt/data
+Pool data defined
+
+$ virsh pool-list --all
+ Name      State      Autostart
+---------------------------------
+ data      inactive   no
+ default   active     yes
+
+$ virsh pool-autostart data
+Pool data marked as autostarted
+
+$ virsh pool-list --all
+ Name      State      Autostart
+---------------------------------
+ data      inactive   yes
+ default   active     yes
+
+$ virsh pool-start data
+Pool data started
+
+$ virsh pool-list --all
  Name      State    Autostart
 -------------------------------
- data      active   no
- default   active   no
+ data      active   yes
+ default   active   yes
  ```
