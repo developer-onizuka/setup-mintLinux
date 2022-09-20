@@ -68,4 +68,12 @@ $ git clone https://github.com/developer-onizuka/nvidia-docker_VirtualMachine2
 $ cd nvidia-docker_VirtualMachine2
 $ vagrant up --provider=libvirt
 ```
-
+```
+$ mkdir -p /mnt/data
+$ virsh pool-create-as --name data --type dir --target /mnt/data
+$ virsh pool-list
+ Name      State    Autostart
+-------------------------------
+ data      active   no
+ default   active   no
+ ```
