@@ -68,6 +68,7 @@ $ git clone https://github.com/developer-onizuka/nvidia-docker_VirtualMachine2
 $ cd nvidia-docker_VirtualMachine2
 $ vagrant up --provider=libvirt
 ```
+**If you wanna change images directry from /var/lib/libvirt/images to some another directry, you might use followings:**
 ```
 $ mkdir -p /mnt/data
 $ virsh pool-create-as --name data --type dir --target /mnt/data
